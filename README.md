@@ -12,8 +12,8 @@
 	./source android-build.profile
 	make
 	file main
-	adb push main.arm /data/local/tmp
-	adb shell /data/local/tmp/main.arm
+	adb push main /data/local/tmp
+	adb shell /data/local/tmp/main
 	
 [x86]
 
