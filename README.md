@@ -5,8 +5,11 @@
 # 사용법
 
 [arm]
+
 ※ 내 환경 전용 profile임.
+
 ※ 다른 환경에서 빌드시 ndk 경로를 다르게 해주길 바람.
+
 
 	make clean
 	./source android-build.profile
