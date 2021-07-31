@@ -12,7 +12,9 @@
 	./source android-build.profile
 	make
 	file main
-
+	adb push main.arm /data/local/tmp
+	adb shell /data/local/tmp/main.arm
+	
 [x86]
 
 	make clean
@@ -22,3 +24,9 @@
 
 
 # 예시
+	file 명령어로 생성된 파일 비교
+![KakaoTalk_20210731_214309443](https://user-images.githubusercontent.com/12112214/127740253-6457c3ca-e5fd-4809-a787-473f215d216b.png)
+
+	adb shell로 arm용 파일 실행 결과
+![KakaoTalk_20210731_214223377](https://user-images.githubusercontent.com/12112214/127740265-09e5a9f1-30ff-428b-976c-f1c22364064e.png)
+
